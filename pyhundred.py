@@ -64,3 +64,25 @@ else:
 
 #vFind the largest of three numbers
 
+def count(fanc):
+
+    count = 0
+
+    def wrapper():
+        nonlocal count
+        count += 1
+        print(count)
+        fanc()
+    return wrapper
+
+@count
+def hey():
+    print("hello parshav")
+
+
+hey()
+hey()
+hey()
+hey()
+hey()
+hey()
