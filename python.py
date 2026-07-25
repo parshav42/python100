@@ -1,6 +1,30 @@
 import os
-user = str(input("please give loction of folder"))
+from pathlib import Path
+# user = str(input("please give loction of folder"))
+user = '/home/parshav/Documents'
 
-for i in os.listdir(user):
+path = Path(user)
+pdf =[]
+filepy=[]
+jpeg =[]
+
+for i in path.rglob("*.pdf"):
+    if i.is_file():
+        pdf.append(i.name)
+
+
+for i in path.rglob("*.jpeg"):
+    for j in path.rglob("*.jpg"):
+        if j.is_file():
+            filepy.append(j.name)
+        elif i.is_file():
+            jpeg.append(i.name)
+
+
+
+
+
+
+
 
 
