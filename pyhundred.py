@@ -87,3 +87,17 @@
 # hey()
 # hey()
 
+def fun():
+    n = int(input("enter number you want until table"))
+
+    for i in range(1, 11):
+        for p in range(1,n+1,1):
+            print(p * i , end='\t')
+        print()
+
+
+
+
+
+
+p = fun()
