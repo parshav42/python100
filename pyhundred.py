@@ -100,13 +100,13 @@
 # x=123
 # rev = 0
 # # Reverse an integer.
-# while(x !=0):
-#     g = x % 10
-#     x = x// 10
-#
-#     print(g)
-#     rev = rev * 10 + g
-# print(rev)
+while(x !=0):
+    g = x % 10
+    x = x// 10
+
+    print(g)
+    rev = rev * 10 + g
+print(rev)
 #
 #
 # p = fun()
